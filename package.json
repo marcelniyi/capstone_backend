@@ -7,13 +7,14 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node server/server.js",
+    "start": "babel-node server/server.js",
     "test": "jest --coverage --forceExit --runInBand --detectOpenHandles ",
     "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "author": "NIYITEGEKA Marcel",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.12.1",
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "celebrate": "^13.0.3",
