@@ -14,7 +14,9 @@ db.once('open', () => {
   //console.log("DB is connected")
 })
 
-
+app.get('/', (req, res) => {
+  res.send({ message: 'Welcome to Marcel Capstone project API' });
+});
 app.use(errors())
 app.use(express.json());
 app.use('/', TodoRoute);
